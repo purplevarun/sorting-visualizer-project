@@ -1,0 +1,22 @@
+.wrappercontainer{
+    margin-top:20px;
+    margin-bottom: 100px;
+}
+.arraybar{
+    width: 2px;
+    background-color: red;
+    display: inline-block;
+    margin: 0 2px;
+}
+body{
+    color:white;
+    background-color:black;
+    width: 100%;
+    height: 100%;
+}
+.generate{
+    background-color:whitesmoke;
+    border-style: double;
+    border-width:3px;
+    border-radius: 5px;
+}

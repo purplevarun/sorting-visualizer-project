@@ -1,5 +1,5 @@
 import React from 'react';
-import './SortingVisualizer.css';
+import './styles.css';
 export default class SortingVisualizer extends React.Component {
     constructor(props) {
         super(props);
@@ -13,7 +13,7 @@ export default class SortingVisualizer extends React.Component {
     }
     shuffleArray(){
         const a =[]; // empty array
-        for(let i=0;i<50;i++){
+        for(let i=0;i<60;i++){
             let value = Math.random()*100 + 1;
             value = Math.floor(value);   
             a.push(value);
@@ -25,13 +25,18 @@ export default class SortingVisualizer extends React.Component {
         const {a} = this.state;
         
         return(
-            <>
-                {a.map((value,idx)=>(
-                    <div className="arraybar" key={idx}>
-                        {value}
-                    </div>
-                ))}
-            </>
+            <div className="wrappercontainer">
+                
+                    {a.map((value,idx)=>(
+                        <div className="arraybar" key={idx} style={{height:`${value*5}px`}}>
+                            
+                        </div>
+                    ))}
+                
+                <p><button className="generate" onClick={()=>this.shuffleArray()}>Shuffle Array</button></p>
+
+            </div>
+
         );
     }
 }
