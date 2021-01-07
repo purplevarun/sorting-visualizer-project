@@ -1,12 +1,14 @@
-.wrappercontainer{
-    margin-top:20px;
-    margin-bottom: 100px;
+.bars_div{
+    /* background-color:green; */
+    overflow: auto;
+    max-height: 500px;
+    margin-bottom: 20px;
 }
 .arraybar{
-    width: 2px;
+    width: 1px;
     background-color: red;
     display: inline-block;
-    margin: 0 2px;
+    margin: 10px 2px;
 }
 body{
     color:white;
@@ -15,6 +17,7 @@ body{
     height: 100%;
 }
 .generate{
+    /* position: absolute; */
     background-color:whitesmoke;
     border-style: double;
     border-width:3px;

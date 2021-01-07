@@ -13,8 +13,8 @@ export default class SortingVisualizer extends React.Component {
     }
     shuffleArray(){
         const a =[]; // empty array
-        for(let i=0;i<60;i++){
-            let value = Math.random()*100 + 1;
+        for(let i=0;i<75;i++){
+            let value = Math.random()*100 + 10;
             value = Math.floor(value);   
             a.push(value);
         }
@@ -25,17 +25,19 @@ export default class SortingVisualizer extends React.Component {
         const {a} = this.state;
         
         return(
-            <div className="wrappercontainer">
-                
+            <div>
+                <div className="bars_div">
                     {a.map((value,idx)=>(
                         <div className="arraybar" key={idx} style={{height:`${value*5}px`}}>
                             
                         </div>
                     ))}
-                
-                <p><button className="generate" onClick={()=>this.shuffleArray()}>Shuffle Array</button></p>
-
+                </div>
+                <div className="inside_wrap">
+                    <button className="btn btn-info btn-sm" onClick={()=>this.shuffleArray()}>Shuffle Array</button>
+                </div>
             </div>
+            
 
         );
     }
