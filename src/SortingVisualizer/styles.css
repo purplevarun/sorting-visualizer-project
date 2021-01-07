@@ -1,11 +1,11 @@
 .bars_div{
     /* background-color:green; */
-    overflow: auto;
+    overflow: hidden;
     max-height: 500px;
     margin-bottom: 20px;
 }
 .arraybar{
-    width: 1px;
+    width: 2px;
     background-color: red;
     display: inline-block;
     margin: 10px 2px;
@@ -23,3 +23,9 @@ body{
     border-width:3px;
     border-radius: 5px;
 }
+.varunbtn{
+    margin: 5px;
+}
+/* .inside_wrap{
+    background-color:blue;
+} */
