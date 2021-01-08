@@ -23,3 +23,15 @@
 //     // return array;
 // };
 //naive method
+export function merge_sort(array){
+    const amnimations=[];
+    if(array.length<=1) return array;
+    const aux_array = array.slice();
+    merge_sort_helper(array,0,array.length-1,aux_array,animations);
+    return animations;
+}
+function merge_sort_helper(main_array,l,r,aux_array,animations) {
+    if(l==r) return;
+    const m = Math.floor((l+r)/2);
+    
+}
