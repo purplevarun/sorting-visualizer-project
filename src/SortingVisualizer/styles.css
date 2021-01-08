@@ -1,8 +1,14 @@
 .bars_div{
     /* background-color:green; */
     overflow: hidden;
+    
+    overflow-y: hidden;
+
     max-height: 500px;
-    margin-bottom: 20px;
+    margin: 20px 0px;
+    /* background-repeat: none; */
+    
+    
 }
 .arraybar{
     width: 2px;

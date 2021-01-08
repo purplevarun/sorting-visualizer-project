@@ -24,17 +24,17 @@
 // };
 //naive method
 export function merge_sort(array){
-    const amnimations=[];
+    const animations=[];
     if(array.length<=1) return array;
     const aux_array = array.slice();
     merge_sort_helper(array,0,array.length-1,aux_array,animations);
     return animations;
 }
 function merge_sort_helper(main_array,l,r,aux_array,animations) {
-    if(l==r) return;
-    const m = Math.floor((l+r)/2);
-    merge_sort_helper(main_array,l,m,aux_array,animations);
-    merge_sort_helper(main_array,m+1,r,aux_array,animations);
+    if(l===r) return;
+    const m = Math.floor( (l+r) /  2 );
+    merge_sort_helper(aux_array,l,m,main_array,animations);
+    merge_sort_helper(aux_array,m+1,r,main_array,animations);
     do_merge(main_array,l,m,r,aux_array,animations);
 }
 function do_merge(main_array,l,m,r,aux_array,animations) {
