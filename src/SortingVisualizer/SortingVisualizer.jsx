@@ -58,10 +58,10 @@ export default class SortingVisualizer extends React.Component {
         }
     }
     quickSort(){
-
+        alert("qs()? false incomplete");
     }
     bubbleSort(){
-
+        alert("bs()? false incomplete");
     }
     about(){
         alert("Made by Varun Kedia\npurplevarun@gmail.com");
