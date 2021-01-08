@@ -22,4 +22,4 @@
 //     return sortedArray;
 //     // return array;
 // };
-//
+//naive method
